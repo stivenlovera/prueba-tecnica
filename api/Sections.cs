@@ -3,7 +3,6 @@ namespace api
 {
     public class Sections
     {
-
         public string problem1(string text)
         {
             if (text.Length == 0)

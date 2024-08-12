@@ -7,7 +7,6 @@ namespace algoritmo
 {
     public class Sections
     {
-
         public string problem1(string text)
         {
             if (text.Length == 0)
@@ -29,13 +28,16 @@ namespace algoritmo
                 return segundo;
             }
         }
+
         public string problem2(int value1, int value2)
         {
             List<string> result = [];
             int divisor = 1;
             int countDivisor = 0;
+            //bucle contador con paramateos de entrada
             while (value1 <= value2)
             {
+                //bucle contador usando divisor para obtener divisibles
                 while (divisor <= value1)
                 {
                     if ((value1 % divisor) == 0)
@@ -46,12 +48,14 @@ namespace algoritmo
                 }
                 if (countDivisor == 2)
                 {
+                    //acumulador
                     result.Add(value1.ToString());
                 }
                 value1++;
                 divisor = 1;
                 countDivisor = 0;
             }
+
             return String.Join(" ", result);
         }
     }
