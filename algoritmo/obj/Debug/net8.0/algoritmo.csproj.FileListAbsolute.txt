@@ -1,0 +1,14 @@
+G:\prueba tecnica\algoritmo\bin\Debug\net8.0\algoritmo.exe
+G:\prueba tecnica\algoritmo\bin\Debug\net8.0\algoritmo.deps.json
+G:\prueba tecnica\algoritmo\bin\Debug\net8.0\algoritmo.runtimeconfig.json
+G:\prueba tecnica\algoritmo\bin\Debug\net8.0\algoritmo.dll
+G:\prueba tecnica\algoritmo\bin\Debug\net8.0\algoritmo.pdb
+G:\prueba tecnica\algoritmo\obj\Debug\net8.0\algoritmo.GeneratedMSBuildEditorConfig.editorconfig
+G:\prueba tecnica\algoritmo\obj\Debug\net8.0\algoritmo.AssemblyInfoInputs.cache
+G:\prueba tecnica\algoritmo\obj\Debug\net8.0\algoritmo.AssemblyInfo.cs
+G:\prueba tecnica\algoritmo\obj\Debug\net8.0\algoritmo.csproj.CoreCompileInputs.cache
+G:\prueba tecnica\algoritmo\obj\Debug\net8.0\algoritmo.dll
+G:\prueba tecnica\algoritmo\obj\Debug\net8.0\refint\algoritmo.dll
+G:\prueba tecnica\algoritmo\obj\Debug\net8.0\algoritmo.pdb
+G:\prueba tecnica\algoritmo\obj\Debug\net8.0\algoritmo.genruntimeconfig.cache
+G:\prueba tecnica\algoritmo\obj\Debug\net8.0\ref\algoritmo.dll
