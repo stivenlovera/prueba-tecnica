@@ -30,3 +30,6 @@ G:\prueba tecnica\api\obj\Debug\net8.0\refint\api.dll
 G:\prueba tecnica\api\obj\Debug\net8.0\api.pdb
 G:\prueba tecnica\api\obj\Debug\net8.0\api.genruntimeconfig.cache
 G:\prueba tecnica\api\obj\Debug\net8.0\ref\api.dll
+G:\prueba tecnica\api\obj\Debug\net8.0\api.sourcelink.json
+G:\prueba tecnica\api\bin\Debug\net8.0\Dapper.dll
+G:\prueba tecnica\api\bin\Debug\net8.0\MySqlConnector.dll
