@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <h4>Formulario de prueba</h4>
+                <div class="mb-3">
+                    <label for="" class="form-label">usuario</label>
+                    <input type="text" class="form-control" id="usuario">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">primer digito</label>
+                    <input type="text" class="form-control" name="value1" id="value1">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">segundo digito</label>
+                    <input type="text" class="form-control" name="value2" id="value2">
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary" onclick="enviar()">
+                        obtener numeros primos
+                    </button>
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">RESULTADO</label>
+                    <input type="text" readonly class="form-control" name="resultado" id="resultado">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    async function enviar() {
+        const response = await fetch('http://localhost:5138/programa/algoritmo/solucion', {
+            method: "POST",
+            body: JSON.stringify({
+                valor1: document.getElementById("value1").value,
+                valor2: document.getElementById("value2").value,
+                usuario: document.getElementById("usuario").value,
+            }),
+            headers: {
+                'Accept': 'application/json, text/plain',
+                'Content-Type': 'application/json;charset=UTF-8'
+            }
+        });
+        const data = await response.json();
+        console.log(data)
+        document.getElementById("resultado").value = data.data
+    }
+
+</script>
+
+</html>

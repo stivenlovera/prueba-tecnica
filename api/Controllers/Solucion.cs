@@ -5,6 +5,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using api.Models;
 using Dapper;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using MySqlConnector;
 
@@ -14,11 +15,16 @@ namespace api.Controllers
     [Route("programa/algoritmo/solucion")]
     public class Solucion : ControllerBase
     {
+        private readonly Sections sections;
+
+        public Solucion(Sections sections)
+        {
+            this.sections = sections;
+        }
         [HttpPost]
         public async Task<Result> Solucion1([FromBody] SolucionDto solucionDto)
         {
-            var algoritmo = new Sections();
-            var resultado = algoritmo.problem2(solucionDto.Valor1, solucionDto.Valor2);
+            var resultado = sections.problem2(solucionDto.Valor1, solucionDto.Valor2);
 
             var result = new Result
             {
